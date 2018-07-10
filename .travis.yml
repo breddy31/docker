@@ -1,11 +1,8 @@
-language: ruby
-
 sudo: true
 
-before_script:
-- source <(curl -sL https://raw.githubusercontent.com/zuazo/docker-in-travis/master/scripts/start_docker.sh)
+install:
+  - curl -sLo - http://j.mp/install-travis-docker | sh -xe
 
 script:
-- bundle exec rspec
+  - ./run 'docker build -t testfile . && docker run testfile'
 
-after_failure: cat docker_daemon.log

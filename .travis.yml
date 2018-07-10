@@ -24,7 +24,6 @@ before_deploy:
   #- chmod -R u+x ./Bluemix_CLI/bin
   - curl -fsSL https://clis.ng.bluemix.net/install/linux | sh
   - bx login -a https://api.ng.bluemix.net -apikey JeyCVnkGEzObVd-yss1aV2QRZ_MheE94bz7k7H9mSuDs -o breddy31@in.ibm.com
-  - bx cr images
   
 deploy:
   provider: script

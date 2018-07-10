@@ -118,8 +118,8 @@ ENV PATH ${PATH}:/opt/ant/bin
 # mv id_rsa.pub .ssh && \
 # mv authorized_keys .ssh
 
-# RUN cd /
-# RUN curl -fsSL https://clis.ng.bluemix.net/install/linux | sh
+RUN cd /
+RUN curl -fsSL https://clis.ng.bluemix.net/install/linux | sh
 
 # WORKDIR /
 

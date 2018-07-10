@@ -28,6 +28,8 @@ before_deploy:
 deploy:
   provider: script
   script: docker push registry.ng.bluemix.net/abhilash1/testfile:ps
+  on:
+    branch: master
 #deploy:
    #edge: true
    #provider: bluemixcloudfoundry

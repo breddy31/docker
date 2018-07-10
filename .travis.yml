@@ -10,9 +10,9 @@ script:
   #after_script:
   #-docker images
   
- before_deploy:
-   - bx login -a https://api.ng.bluemix.net -apikey JeyCVnkGEzObVd-yss1aV2QRZ_MheE94bz7k7H9mSuDs -o breddy31@in.ibm.com -s dev
-   - bx cr images
+ #before_deploy:
+   #- bx login -a https://api.ng.bluemix.net -apikey JeyCVnkGEzObVd-yss1aV2QRZ_MheE94bz7k7H9mSuDs -o breddy31@in.ibm.com -s dev
+   #- bx cr images
  
  #deploy:
   #provider: script

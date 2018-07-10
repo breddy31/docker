@@ -7,8 +7,8 @@ script:
   - docker build -t testfilee . 
   - docker tag testfilee registry.ng.bluemix.net/abhilash1/testfilee:ps
   
-  #after_script:
-  #-docker images
+  after_script:
+  -docker images
   
  #before_deploy:
    #- bx login -a https://api.ng.bluemix.net -apikey JeyCVnkGEzObVd-yss1aV2QRZ_MheE94bz7k7H9mSuDs -o breddy31@in.ibm.com -s dev
@@ -19,12 +19,12 @@ script:
   #script: docker push registry.ng.bluemix.net/abhilash1/testfile:ps
  #on:
   #branch: master
-  #deploy:
-   #edge: true
-   #provider: bluemixcloudfoundry
-   #username: breddy31@in.ibm.com
-   #password: Abhichinnifeb@0202
-   #organization: breddy31@in.ibm.com
-   #space: dev
-   #region: US South                        # (optional)  [ng, eu-gb , au-syd] Defaults to US South region (ng).
-   #api: https://api.ng.bluemix.net  
+  deploy:
+   edge: true
+   provider: bluemixcloudfoundry
+   username: breddy31@in.ibm.com
+   password: Abhichinnifeb@0202
+   organization: breddy31@in.ibm.com
+   space: dev
+   region: US South                        # (optional)  [ng, eu-gb , au-syd] Defaults to US South region (ng).
+   api: https://api.ng.bluemix.net  

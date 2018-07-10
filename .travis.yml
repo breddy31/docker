@@ -4,8 +4,8 @@ sudo: true
   #- curl -sLo - http://j.mp/install-travis-docker | sh -xe
 
 script:
-  - docker build -t testfile . 
-  - docker tag testfile registry.ng.bluemix.net/abhilash1/testfile:ps
+  - docker build -t testfilee . 
+  - docker tag testfilee registry.ng.bluemix.net/abhilash1/testfilee:ps
   
   #after_script:
   #-docker images

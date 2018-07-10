@@ -30,6 +30,7 @@ deploy:
   script: docker push registry.ng.bluemix.net/abhilash1/testfile:ps
   on:
     branch: master
+    skip_cleanup: true
 #deploy:
    #edge: true
    #provider: bluemixcloudfoundry

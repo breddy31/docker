@@ -4,5 +4,5 @@ sudo: true
   #- curl -sLo - http://j.mp/install-travis-docker | sh -xe
 
 script:
-  - ./run 'docker build -t testfile . && docker run testfile'
+  - 'docker build -t testfile . && docker run testfile'
 

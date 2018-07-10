@@ -27,7 +27,7 @@ before_deploy:
   
 deploy:
   provider: script
-  script: docker push registry.ng.bluemix.net/abhilash1/testfile:p
+  script: docker push registry.ng.bluemix.net/abhilash1/testfile:ps
   skip_cleanup: true
 on:
   branch: master

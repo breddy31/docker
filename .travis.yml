@@ -5,4 +5,7 @@ sudo: true
 
 script:
   - 'docker build -t testfile . && docker run testfile'
+  
+after_script:
+  - docker images
 

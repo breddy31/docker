@@ -14,9 +14,9 @@ script:
    - bx login -a https://api.ng.bluemix.net -apikey JeyCVnkGEzObVd-yss1aV2QRZ_MheE94bz7k7H9mSuDs -o breddy31@in.ibm.com -s dev
    - bx cr images
  
- deploy:
-  provider: script
-  script: docker push registry.ng.bluemix.net/abhilash1/testfile:ps
+ #deploy:
+  #provider: script
+  #script: docker push registry.ng.bluemix.net/abhilash1/testfile:ps
  #on:
   #branch: master
   #deploy:

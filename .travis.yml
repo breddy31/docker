@@ -15,7 +15,7 @@ script:
   - bx cr images
  
  deploy:
-  provider: script
-  script: docker push registry.ng.bluemix.net/abhilash1/testfile:ps
+  provider:script
+  script:docker push registry.ng.bluemix.net/abhilash1/testfile:ps
  on:
-  branch: master
+  branch:master

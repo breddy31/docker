@@ -16,6 +16,7 @@ script:
  
  deploy:
   provider: script
-  script: docker push registry.ng.bluemix.net/abhilash1/testfile:ps
+  script:
+  - docker push registry.ng.bluemix.net/abhilash1/testfile:ps
  on:
   branch: master

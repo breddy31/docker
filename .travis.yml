@@ -36,7 +36,7 @@ deploy:
    #edge: true
    #provider: bluemixcloudfoundry
    #username: breddy31@in.ibm.com
-   #password: Abhichinnifeb@0202
+   #password: need to be encrypted
    #organization: breddy31@in.ibm.com
    #space: dev
    #region: US South                        # (optional)  [ng, eu-gb , au-syd] Defaults to US South region (ng).
